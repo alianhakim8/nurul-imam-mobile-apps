@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.guru.loginActivity.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Masuk"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/emailLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/et_custom"
+                    android:ems="10"
+                    android:hint="@string/e_mail"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/nikLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_custom"
+                    android:ems="10"
+                    android:hint="Masukan NIK"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="10dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/passwordLogin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/et_custom"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih Status :" />
+
+                    <RadioButton
+                        android:id="@+id/rbGuru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Guru" />
+
+                    <RadioButton
+                        android:id="@+id/rbKepsek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kepala Sekolah" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnMasuk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_custom"
+                    android:onClick="onClickLogin"
+                    android:text="Masuk"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum Punya Akun ?" />
+
+                <TextView
+                    android:id="@+id/daftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="onClickLogin"
+                    android:text="Daftar"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.guru.loginActivity.Register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
+                            android:gravity="center_horizontal"
+                            android:text="Daftar"
+                            android:textSize="30sp" />
+
+
+                        <EditText
+                            android:id="@+id/emailLogin"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/et_custom"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp" />
+
+                        <EditText
+                            android:id="@+id/namaRegister"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/et_custom"
+                            android:hint="Nama Lengkap"
+                            android:inputType="textPersonName"
+                            android:padding="10dp" />
+
+                        <EditText
+                            android:id="@+id/nikRegister"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/et_custom"
+                            android:hint="Masukan NIK"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:padding="10dp" />
+
+                        <com.santalu.maskedittext.MaskEditText
+                            android:id="@+id/tmtRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/et_custom"
+                            android:hint="Tanggal Masuk Tugas"
+                            android:inputType="date"
+                            android:padding="10dp"
+                            app:met_mask="##/##/####" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            app:hintEnabled="false"
+                            app:passwordToggleEnabled="true">
+
+                            <EditText
+                                android:id="@+id/passwordRegister"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/et_custom"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:padding="10dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <RadioGroup
+                                android:id="@+id/radio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pilih Status :" />
+
+                                <RadioButton
+                                    android:id="@+id/rbGuru"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:text="Guru" />
+
+                                <RadioButton
+                                    android:id="@+id/rbKepsek"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kepala Sekolah" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <Button
+                            android:textAllCaps="false"
+                            android:id="@+id/btnDaftar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/btn_custom"
+                            android:onClick="registerOnClickButton"
+                            android:text="Daftar"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="32dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sudah Punya Akun ?" />
+
+                        <TextView
+                            android:id="@+id/masuk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:onClick="registerOnClickButton"
+                            android:text="Masuk"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

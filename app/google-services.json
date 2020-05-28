@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "696240791747",
+    "firebase_url": "https://aplikasi-smk-it-nurul-imam.firebaseio.com",
+    "project_id": "aplikasi-smk-it-nurul-imam",
+    "storage_bucket": "aplikasi-smk-it-nurul-imam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696240791747:android:9e224b7b219d29c3d5c276",
+        "android_client_info": {
+          "package_name": "com.iai.nurulimammobileapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696240791747-3c72728cm728v9d5ufrbuemspaqhv3ja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iai.nurulimammobileapps",
+            "certificate_hash": "a289a0f7f86f8c453bc1e2ef32476efc0a673fed"
+          }
+        },
+        {
+          "client_id": "696240791747-abr7pc29sbdgffhv3o27pm5bpli2u5em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZfCfRa9u6WDHAoastFhohPRQ-eJxVHZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696240791747-abr7pc29sbdgffhv3o27pm5bpli2u5em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
