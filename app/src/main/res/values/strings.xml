@@ -1,15 +1,102 @@
 <resources>
-    <string name="app_name">Nurul Imam Mobile Apps</string>
+    <string name="app_name">Nurul Imam</string>
+    <string name="head_title_1">NURUL</string>
+    <string name="head_title_2">IMAM</string>
+    <string name="continue_as">Lanjutkan Sebagai :</string>
+    <string name="teacher">Guru</string>
+    <string name="parent">Orang Tua</string>
+    <string name="student">Siswa</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="nik">NIK</string>
+    <string name="password">Password</string>
+    <string name="loginQuestion">Belum Punya Akun ?</string>
+    <string name="register">Daftar</string>
+    <string name="completeName">Nama Lengkap</string>
+    <string name="register1">Register</string>
+    <string name="status">Pilih Status :</string>
+    <string name="head_teacher">Kepala Sekolah</string>
+    <string name="already_account">Sudah Punya Akun ?</string>
+    <string name="getIn">Masuk</string>
+    <string name="teacher_status">Status</string>
+    <string name="head_title">Nurul Imam</string>
+    <string name="desc">School Application</string>
+    <string name="personal_data">Personal Data</string>
+    <string name="teacher_list">Daftar Guru</string>
+    <string name="rpp">Rencana Pelaksana Pembelajaran</string>
+    <string name="logout">Keluar</string>
+    <string name="img">img</string>
+    <string name="planning">Rencana Pembelajaran</string>
+    <string name="semester">Semester</string>
+    <string name="studentClass">Kelas</string>
+    <string name="subjects">Mata Pelajaran</string>
+    <string name="meeting">Pertemuan</string>
+    <string name="time_allocation">Alokasi Waktu</string>
+    <string name="years">Tahun Ajaran</string>
+    <string name="basic_competency">Kompentensi Dasar</string>
+    <string name="purpose">Tujuan</string>
+    <string name="think">Pendekatan</string>
+    <string name="model">Model</string>
+    <string name="theory">Materi</string>
+    <string name="tools_media">Alat / Media</string>
+    <string name="learning_source">Sumber Belajar</string>
+    <string name="assessment">Penilaian</string>
+    <string name="date">Tanggal</string>
+    <string name="add">Tambah</string>
+    <string name="teacher_data">Data Guru</string>
+    <string name="createPost">Buat Postingan</string>
+    <string name="post">Post</string>
+    <string name="post_hint">Apa yang anda pikirkan ?</string>
+    <string name="title_post">Judul Postingan</string>
+    <string name="edit">Edit Profile</string>
 
+    <string-array name="subjects">
+        <item>Pilih Mata Pelajaran : </item>
+        <item>Matematika</item>
+        <item>Bahasa Indonesia</item>
+        <item>Bahasa Sunda</item>
+        <item>Produktif</item>
+        <item>Bahasa Inggris</item>
+    </string-array>
+
+    <string-array name="studentClass">
+        <item>Pilih Kelas : </item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="semester">
+        <item>Ganjil</item>
+        <item>Genap</item>
+    </string-array>
+
+    <string-array name="timeAllocation">
+        <item>2 Jam</item>
+        <item>4 Jam</item>
+        <item>6 Jam</item>
+    </string-array>
+
+    <string-array name="meetingStudy">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>11</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="swipe_left_for_register">Swipe Left for Register</string>
-    <string name="login">Login</string>
-    <string name="password">Password</string>
-    <string name="e_mail">Email</string>
-    <string name="tag">Let\'s join us and \nBuild your relationship with others</string>
-    <string name="swipe_right_for_login">Swipe Right for Login</string>
-    <string name="register">Register</string>
-    <string name="re_type_password">Re-type Password</string>
 
 </resources>
